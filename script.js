@@ -24,32 +24,63 @@ document.getElementById('themeToggle').addEventListener('click', () => {
 /* ---------- Mobile menu ---------- */
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
+
 function closeMobileMenu(){
+  if (!hamburger || !mobileMenu) return;
+
   hamburger.classList.remove('active');
   hamburger.setAttribute('aria-expanded','false');
   mobileMenu.classList.remove('open');
   body.style.overflow = '';
 }
-hamburger.addEventListener('click', (event) => {
-  event.stopPropagation();
-  const isOpen = mobileMenu.classList.toggle('open');
-  hamburger.classList.toggle('active', isOpen);
-  hamburger.setAttribute('aria-expanded', String(isOpen));
-  body.style.overflow = isOpen ? 'hidden' : '';
-});
-document.addEventListener('click', (event) => {
-  if (!mobileMenu.classList.contains('open')) return;
-  const clickedInsideMenu = mobileMenu.contains(event.target);
-  const clickedToggle = hamburger.contains(event.target);
-  if (!clickedInsideMenu && !clickedToggle) closeMobileMenu();
-});
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && mobileMenu.classList.contains('open')) closeMobileMenu();
-});
-window.addEventListener('resize', () => {
-  if (window.innerWidth > 980 && mobileMenu.classList.contains('open')) closeMobileMenu();
-});
-mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMobileMenu));
+
+if (hamburger && mobileMenu) {
+
+  hamburger.addEventListener('click', (event) => {
+    event.stopPropagation();
+
+    const isOpen = mobileMenu.classList.toggle('open');
+
+    hamburger.classList.toggle('active', isOpen);
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+
+    body.style.overflow = isOpen ? 'hidden' : '';
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!mobileMenu.classList.contains('open')) return;
+
+    const clickedInsideMenu = mobileMenu.contains(event.target);
+    const clickedToggle = hamburger.contains(event.target);
+
+    if (!clickedInsideMenu && !clickedToggle) {
+      closeMobileMenu();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (
+      event.key === 'Escape' &&
+      mobileMenu.classList.contains('open')
+    ) {
+      closeMobileMenu();
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (
+      window.innerWidth > 1100 &&
+      mobileMenu.classList.contains('open')
+    ) {
+      closeMobileMenu();
+    }
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', closeMobileMenu);
+  });
+
+}
 
 /* ---------- Smooth scroll with fixed-nav offset ---------- */
 const nav = document.getElementById('nav');
