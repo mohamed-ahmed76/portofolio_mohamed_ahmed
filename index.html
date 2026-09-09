@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed Ahmed — UI/UX &amp; Product Designer</title>
+<meta name="description" content="Mohamed Ahmed — UI/UX Designer &amp; Product Designer. Physics &amp; Computer Science student building experience through UI/UX internships and personal projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="is-loading">
+
+<!-- ICON SPRITE -->
+<svg style="display:none" aria-hidden="true">
+<defs>
+<symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></symbol>
+<symbol id="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+<symbol id="icon-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+<symbol id="icon-chevron-up" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></symbol>
+<symbol id="icon-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+<symbol id="icon-close" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+<symbol id="icon-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></symbol>
+<symbol id="icon-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></symbol>
+<symbol id="icon-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="icon-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="icon-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></symbol>
+<symbol id="icon-arrow-left" viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></symbol>
+<symbol id="icon-layers" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></symbol>
+<symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.2" y1="16.2" x2="21" y2="21"/></symbol>
+<symbol id="icon-layout" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="9" x2="9" y2="21"/></symbol>
+<symbol id="icon-components" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+<symbol id="icon-prototype" viewBox="0 0 24 24"><path d="M4 5h6v6H4zM14 13h6v6h-6z"/><path d="M10 8h3a2 2 0 0 1 2 2v3M14 16h-3a2 2 0 0 1-2-2v-3"/></symbol>
+</defs>
+</svg>
+
+<!-- LOADING SCREEN -->
+<div class="loader" id="loader">
+  <div class="loader-mark">
+    <img src="assetes/my-logo.png" alt="MA logo" class="loader-logo" />
+  </div>
+  <div class="loader-bar"><span></span></div>
+  <p class="loader-text">Loading…</p>
+</div>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="brand" data-scroll aria-label="Go to home section">
+      <img class="brand-mark" src="assetes/my-logo.png" alt="MA logo" />
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" data-scroll class="active">Home</a>
+      <a href="#about" data-scroll>About</a>
+      <a href="#education" data-scroll>Education</a>
+      <a href="#skills" data-scroll>Skills</a>
+      <a href="#services" data-scroll>Services</a>
+      <a href="#experience" data-scroll>Experience</a>
+      <a href="#projects" data-scroll>Projects</a>
+      <a href="#certificates" data-scroll>Certificates</a>
+      <a href="#testimonials" data-scroll>Testimonials</a>
+      <a href="#contact" data-scroll>Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme">
+        <svg class="icon icon-sun" aria-hidden="true"><use href="#icon-sun"/></svg>
+        <svg class="icon icon-moon" aria-hidden="true"><use href="#icon-moon"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" data-scroll>Home</a>
+  <a href="#about" data-scroll>About</a>
+  <a href="#education" data-scroll>Education</a>
+  <a href="#skills" data-scroll>Skills</a>
+  <a href="#services" data-scroll>Services</a>
+  <a href="#experience" data-scroll>Experience</a>
+  <a href="#projects" data-scroll>Projects</a>
+  <a href="#certificates" data-scroll>Certificates</a>
+  <a href="#testimonials" data-scroll>Testimonials</a>
+  <a href="#contact" data-scroll>Contact</a>
+</div>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <p class="eyebrow reveal">Hello, I'm</p>
+      <h1 class="hero-title reveal reveal-1">Mohamed Ahmed</h1>
+      <p class="hero-role reveal reveal-1"><span id="roleText">UI/UX Designer</span><span class="hero-cursor" aria-hidden="true"></span></p>
+      <p class="hero-text reveal reveal-2">Designing meaningful digital experiences that combine user needs, business goals, and beautiful interfaces.</p>
+      <div class="hero-ctas reveal reveal-3">
+        <a href="#projects" class="btn btn-primary" data-scroll>View My Work <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+        <a href="#contact" class="btn btn-ghost" data-scroll>Let's Talk</a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal reveal-2">
+      <div class="hero-frame">
+        <div class="hero-frame-glow"></div>
+        <div class="hero-monogram">
+          <svg viewBox="0 0 200 200"><text x="100" y="140" text-anchor="middle" font-family="Playfair Display, serif" font-size="170" font-weight="700" fill="var(--gold)">MA</text></svg>
+        </div>
+        <svg class="hero-grid-lines" viewBox="0 0 400 460" aria-hidden="true">
+          <line x1="0" y1="150" x2="60" y2="150" stroke="var(--gold)" stroke-width="1" opacity=".5"/>
+          <line x1="340" y1="150" x2="400" y2="150" stroke="var(--gold)" stroke-width="1" opacity=".5"/>
+          <line x1="200" y1="40" x2="200" y2="10" stroke="var(--gold)" stroke-width="1" opacity=".5"/>
+          <circle cx="200" cy="10" r="2.5" fill="var(--gold)" opacity=".7"/>
+          <circle cx="60" cy="150" r="2.5" fill="var(--gold)" opacity=".7"/>
+          <circle cx="340" cy="150" r="2.5" fill="var(--gold)" opacity=".7"/>
+        </svg>
+        <div class="hero-portrait">
+          <img src="assetes/home-portrait.png" alt="Mohamed Ahmed wearing a black suit">
+        </div>
+      </div>
+      <div class="float-card float-status"><span class="dot-pulse"></span>Available for new projects</div>
+    </div>
+  </div>
+
+  <button class="scroll-cue" data-scroll-target="#about" aria-label="Scroll to about section">
+    <span class="line"></span>Scroll
+  </button>
+</section>
+
+<!-- ABOUT -->
+<section class="about section" id="about">
+  <div class="container about-grid">
+    <div class="about-visual reveal">
+      <div class="about-frame">
+        <img class="about-portrait" src="assetes/about-portrait.png" alt="Mohamed Ahmed wearing a black jacket">
+        <span class="about-frame-corner tl"></span>
+        <span class="about-frame-corner br"></span>
+      </div>
+      <div class="float-card about-tag"><svg class="icon" style="width:15px;height:15px;color:var(--gold)" aria-hidden="true"><use href="#icon-layers"/></svg>Design Systems</div>
+    </div>
+
+    <div class="about-content">
+      <p class="eyebrow reveal">About Me</p>
+      <h2 class="section-title reveal reveal-1">Designing experiences,<br>not just interfaces.</h2>
+      <p class="about-text reveal reveal-2">I help Class A &amp; B automotive brands turn complex user needs into intuitive, high-converting digital experiences through UX research, UI design, product design, and rapid prototyping—with reliable execution, clear communication, and on-time delivery.</p>
+
+      <ul class="about-focus reveal reveal-3">
+        <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>User-Centered Design</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Product Thinking</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Visual Design</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Usability</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Research</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Problem Solving</li>
+      </ul>
+
+      <a href="./Mohamed%20Ahmed%20-%20CV.pdf" class="btn btn-primary about-cta reveal reveal-3" id="downloadCv" download="Mohamed Ahmed - CV.pdf">Download CV <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="education section" id="education">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Academic Background</p>
+      <h2 class="section-title">Education</h2>
+    </div>
+
+    <div class="edu-card reveal">
+      <div class="edu-icon-stack">
+        <div class="edu-icon" aria-hidden="true">
+          <img src="assetes/zagazig-logo.png" alt="Zagazig University logo" />
+        </div>
+        <div class="edu-icon secondary" aria-hidden="true">
+          <img src="assetes/zagazig-science-logo.png" alt="Zagazig Faculty of Science logo" />
+        </div>
+      </div>
+      <div class="edu-body">
+        <div class="edu-date-row">
+          <span class="graduation-emoji" aria-hidden="true">🎓</span>
+          <span class="timeline-date">July 2027</span>
+        </div>
+        <h3>B.Sc. Physics &amp; Computer Science</h3>
+        <span class="edu-uni">Faculty of Science, Zagazig University</span>
+        <p>A dynamic department combining <strong>physics and advanced computing</strong> to prepare students for real-world challenges. With expertise in <strong>quantum mechanics, AI, data science, computational physics, and quantum computing</strong>, students gain practical experience through modern labs, research, and collaborative projects—preparing them to lead in <strong>technology, science, and innovation</strong>.</p>
+        <div class="edu-meta">
+          <div><span class="edu-label">Department</span><span class="edu-value">Physics &amp; Computer Science</span></div>
+          <div><span class="edu-label">Grade</span><span class="edu-value">Very Good</span></div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills-band" id="skills">
+  <div class="container section">
+    <div class="section-head center reveal">
+      <p class="eyebrow">What I Do</p>
+      <h2 class="section-title">Skills &amp; Expertise</h2>
+      <p>A toolkit built across research, interface design, and the software that brings both to life.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal reveal-1">
+        <div class="skill-card-head"><svg class="icon" aria-hidden="true"><use href="#icon-layers"/></svg><h3>UX Design</h3></div>
+        <ul>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>User Research</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>User Personas</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>User Flows</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Information Architecture</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Wireframing</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Usability Testing</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal reveal-2">
+        <div class="skill-card-head"><svg class="icon" aria-hidden="true"><use href="#icon-layers"/></svg><h3>UI Design</h3></div>
+        <ul>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Visual Design</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Design Systems</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Responsive Design</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Prototyping</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Interaction Design</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Accessibility</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal reveal-4">
+        <div class="skill-card-head"><svg class="icon" aria-hidden="true"><use href="#icon-star"/></svg><h3>Soft Skills &amp; Languages</h3></div>
+        <ul>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Communication</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Teamwork</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Problem Solving</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Time Management</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Adaptability</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Arabic — Native</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>English — Very Good</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal reveal-3">
+        <div class="skill-card-head"><svg class="icon" aria-hidden="true"><use href="#icon-layers"/></svg><h3>Tools</h3></div>
+        <ul>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Figma</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Adobe XD</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Photoshop</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Illustrator</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>FigJam</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services section" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">What I Offer</p>
+      <h2 class="section-title">Services</h2>
+      <p>Thoughtful design support for products that are useful, clear, and ready to grow.</p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card reveal reveal-1">
+        <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#icon-search"/></svg></div>
+        <h3>UX Research</h3>
+      </article>
+      <article class="service-card reveal reveal-2">
+        <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#icon-layout"/></svg></div>
+        <h3>UI/UX Design</h3>
+      </article>
+      <article class="service-card reveal reveal-3">
+        <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#icon-components"/></svg></div>
+        <h3>Design Systems</h3>
+      </article>
+      <article class="service-card reveal reveal-4">
+        <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#icon-prototype"/></svg></div>
+        <h3>Prototyping</h3>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience section" id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Internship Experience</p>
+      <h2 class="section-title">Experience</h2>
+    </div>
+
+    <div class="experience-carousel reveal">
+      <button class="exp-nav exp-prev" id="expPrev" aria-label="Previous experience"> <svg class="icon" aria-hidden="true"><use href="#icon-arrow-left"/></svg> </button>
+      <div class="experience-track" id="experienceTrack">
+        <div class="exp-slide">
+          <div class="exp-card reveal reveal-1">
+            <div class="exp-mark"><img src="assetes/depi-logo.png" alt="DEPI logo" /></div>
+            <div class="exp-body">
+              <span class="timeline-date">In Progress</span>
+              <h3>UI/UX Design Intern</h3>
+              <span class="timeline-company">DEPI — Digital Egypt Pioneers Initiative</span>
+              <p>Program focused on creating intuitive,user-centered web and mobile interfaces.Covers the complete UI/UX lifecycle from user research and wireframing to design systems,interactive prototyping,and AI-assisted design workflows.</p>
+              <ul class="timeline-list">
+                <li><strong>UX/UI Design:</strong> User research, journey mapping, wireframing, responsive interface design, and prototyping</li>
+                <li><strong>Systems &amp; Testing:</strong> Design system creation, usability testing, and developer handoff</li>
+                <li><strong>Tools Stack:</strong> Figma, Adobe XD, Photoshop, Illustrator, and AI Prompt Engineering</li>
+              </ul>
+              <div class="tags"><span>Figma</span><span>Design Systems</span><span>Adobe XD</span><span>Adobe Creative Suite</span><span>AI Prompting</span><span>UX Research</span><span>Responsive UI</span><span>Prototyping</span><span>Usability Testing</span><span>UI Design</span><span>Principles of Design</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-slide">
+          <div class="exp-card reveal reveal-2">
+            <div class="exp-mark"><img src="assetes/eraasoft-logo.webp" alt="Eraasoft logo" /></div>
+            <div class="exp-body">
+              <span class="timeline-date">September 2027</span>
+              <h3>UI/UX Design Intern</h3>
+              <span class="timeline-company">Eraasoft</span>
+              <p>A hands-on training program focused on core UI/UX methodologies and building end-to-end digital product solutions:</p>
+              <ul class="timeline-list">
+                <li><strong>User Understanding &amp; Research:</strong> Analyzed user behaviors, created user personas, and mapped out intuitive user journeys.</li>
+                <li><strong>Wireframing &amp; Structure:</strong> Developed low- and high-fidelity wireframes to establish clear information architecture.</li>
+                <li><strong>UI Design:</strong> Crafted visually cohesive and user-friendly interface components.</li>
+                <li><strong>Interactive Prototyping:</strong> Built interactive prototypes to simulate real product flows and validate overall usability.</li>
+              </ul>
+              <div class="tags"><span>Figma</span><span>Wireframing</span><span>UX Research</span><span>Responsive UI</span><span>Prototyping</span><span>Usability Testing</span><span>UI Design</span><span>Principles of Design</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-slide">
+          <div class="exp-card reveal reveal-3">
+            <div class="exp-mark"><img src="assetes/iti-logo.jpe" alt="ITI logo" /></div>
+            <div class="exp-body">
+              <span class="timeline-date">Summer 2026</span>
+              <h3>UI/UX Design Training Program</h3>
+              <span class="timeline-company">ITI — Information Technology Institute (Summer Training)</span>
+              <p>Completed a comprehensive hybrid training program covering the end-to-end UI/UX product design lifecycle.</p>
+              <ul class="timeline-list">
+                <li>Conducted user research and usability testing to make data-driven design decisions</li>
+                <li>Designed interactive prototypes, multi-platform UI components, and responsive web layouts aligned with design system</li>
+                <li>Created vector art and digital assets using Adobe Illustrator and Photoshop</li>
+                <li>Integrated AI-powered workflows to optimize design ideation and research processes</li>
+              </ul>
+              <div class="tags"><span>Figma</span><span>Adobe Creative Suite</span><span>Responsive UI</span><span>Prototyping</span><span>AI Workflows</span><span>UX Research</span><span>Usability Testing</span><span>UI Design</span><span>Principles of Design</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-slide">
+          <div class="exp-card reveal reveal-4">
+            <div class="exp-mark"><img src="assetes/nti-logo.png" alt="NTI logo" /></div>
+            <div class="exp-body">
+              <span class="timeline-date">June 2026</span>
+              <h3>UI/UX Design Trainee</h3>
+              <span class="timeline-company">NTI — National Telecommunication Institute</span>
+              <p>An intensive training program focused on end-to-end digital product design.</p>
+              <ul class="timeline-list">
+                <li><strong>User Research:</strong> Conducted user research and mapped user journeys to ensure an intuitive experience</li>
+                <li><strong>UI &amp; Responsive Design:</strong> Crafted responsive web and mobile interfaces aligned with cross-platform design guidelines</li>
+                <li><strong>Interactive Prototyping:</strong> Developed high-fidelity interactive prototypes to simulate real user flows</li>
+                <li><strong>Usability Testing:</strong> Executed usability testing sessions to iterate and refine designs based on user feedback</li>
+              </ul>
+              <div class="tags"><span>UX Research</span><span>Responsive UI</span><span>Prototyping</span><span>Usability Testing</span><span>UI Design</span><span>Principles of Design</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="exp-nav exp-next" id="expNext" aria-label="Next experience"> <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg> </button>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects section" id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Portfolio</p>
+      <h2 class="section-title">Selected Work</h2>
+      <p>A handful of recent case studies across mobile, web and product design.</p>
+    </div>
+
+    <div class="project-showcase reveal reveal-1" aria-live="polite">
+      <div class="project-showcase-shell">
+        <div class="project-showcase-media">
+          <img id="projectShowcaseImage" src="assetes/g-parts-pro-app.png" alt="G-Parts-Pro Application mobile app preview" />
+        </div>
+
+        <div class="project-showcase-info">
+          <div class="project-showcase-top">
+            <span class="project-showcase-tag" id="projectShowcaseCategory">Mobile App</span>
+            <span class="project-showcase-meta">Case Study</span>
+          </div>
+
+          <h3 id="projectShowcaseTitle">G-Parts-Pro Application</h3>
+          <p id="projectShowcaseDescription">Conducted competitive audits and designed high-fidelity splash screens, home layouts, and color themes focused on spare part catalog navigation. Engineered simplified search and filter user flows to reduce navigation drop-off.</p>
+
+          <div class="project-detail-grid">
+            <div class="project-detail-item">
+              <span>Role</span>
+              <strong id="projectShowcaseRole">UI/UX Designer</strong>
+            </div>
+            <div class="project-detail-item">
+              <span>Tools</span>
+              <strong id="projectShowcaseTools">Figma · ChatGPT</strong>
+            </div>
+            <div class="project-detail-item">
+              <span>Focus</span>
+              <strong id="projectShowcaseFocus">Navigation &amp; Catalog UX</strong>
+            </div>
+          </div>
+
+          <div class="project-showcase-actions">
+            <button class="project-cta" id="projectViewBtn" type="button" data-project="gparts">View Case Study <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-slider-controls" aria-label="Project navigation">
+        <button class="project-nav project-prev" id="projectPrev" type="button" aria-label="Previous project"><svg class="icon" aria-hidden="true"><use href="#icon-arrow-left"/></svg></button>
+        <span class="project-counter" id="projectCounter">01 / 05</span>
+        <button class="project-nav project-next" id="projectNext" type="button" aria-label="Next project"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="project-modal" id="projectModal" aria-hidden="true">
+  <div class="project-modal-overlay" id="modalOverlay"></div>
+  <div class="project-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close case study"><svg class="icon" aria-hidden="true"><use href="#icon-close"/></svg></button>
+    <span class="project-modal-cat" id="modalCat"></span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+    <ul class="modal-highlights" id="modalHighlights"></ul>
+    <div class="modal-tools"><span class="modal-label">Tools used</span><p id="modalTools"></p></div>
+    <div class="modal-links" id="modalLinks"></div>
+  </div>
+</div>
+
+<!-- CERTIFICATES -->
+<section class="certificates section" id="certificates">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Credentials</p>
+      <h2 class="section-title">Certificates</h2>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card reveal reveal-1">
+        <div class="cert-preview">
+          <img src="assetes/fourth-certificate.jpe" alt="AI for You training and assessment certificate record" class="cert-image" />
+        </div>
+        <h4>AI for Training</h4>
+        <span class="cert-org">Oracle University</span>
+        <p class="cert-description">Completed Oracle University's AI for You learning path and assessment, covering foundational artificial intelligence concepts through guided training and video coursework.</p>
+        <span class="cert-date">06/08/2026</span>
+        <a href="https://drive.google.com/file/d/1ghuY8AF7URSE3JO38ts27py3pHaJFiD5/view?usp=sharing" class="cert-link" target="_blank" rel="noopener noreferrer">View Certificate <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
+      </div>
+      <div class="cert-card reveal reveal-2">
+        <div class="cert-preview">
+          <img src="assetes/ux-design-fundamentals-certificate.png" alt="UX Design Fundamentals certificate" class="cert-image" />
+        </div>
+        <h4>UX Design Fundamentals</h4>
+        <span class="cert-org">ITI Platform · Mahara-Tech</span>
+        <p class="cert-description">Certificate of completion for successfully finishing the UX Design Fundamentals course, covering essential user experience principles and design foundations.</p>
+        <span class="cert-date">16/02/26</span>
+        <a href="https://drive.google.com/file/d/1ewxsA0vkSYoDXFEWKpYHcB4rSuD33hfG/view?usp=sharing" class="cert-link" target="_blank" rel="noopener noreferrer">View Certificate <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
+      </div>
+      <div class="cert-card reveal reveal-3">
+        <div class="cert-preview">
+          <img src="assetes/new-certificate.jpe" alt="Human Development and Self-Esteem certificate" class="cert-image" />
+        </div>
+        <h4>Human Development (Self-Esteem)</h4>
+        <span class="cert-org">Unix Academy</span>
+        <p class="cert-description">Certificate of completion for a 10-hour Human Development course focused on self-esteem, personal growth, and building a stronger understanding of individual development.</p>
+        <span class="cert-date">03/06/2024 – 02/09/2024</span>
+        <a href="https://drive.google.com/file/d/1dIml6uzIU0xPHwU4P9EFwojHxwhbH29A/view?usp=sharing" class="cert-link" target="_blank" rel="noopener noreferrer">View Certificate <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
+      </div>
+      <div class="cert-card reveal reveal-4">
+        <div class="cert-preview">
+          <img src="assetes/third-certificate.jpe" alt="Elementary English Conversation certificate" class="cert-image" />
+        </div>
+        <h4>Elementary English Conversation</h4>
+        <span class="cert-org">Unix Academy</span>
+        <p class="cert-description">Certificate of completion for a 12-hour Elementary English Conversation course, including a successful assessment with an excellent 90% result.</p>
+        <span class="cert-date">03/06/2024 – 02/09/2024</span>
+        <a href="https://drive.google.com/file/d/15PMw71S4azle2TRdr00RZ8JMlcHJJ4pP/view?usp=sharing" class="cert-link" target="_blank" rel="noopener noreferrer">View Certificate <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials section" id="testimonials">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Client Words</p>
+      <h2 class="section-title">Testimonials</h2>
+    </div>
+    <div class="testi-carousel reveal" id="testiCarousel">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-slide">
+          <div class="testi-card">
+            <span class="testi-quote">&rdquo;</span>
+            <div class="testi-stars">★★★★★</div>
+            <p>Mohamed has an incredible eye for detail and a rare ability to translate complex requirements into interfaces our users genuinely enjoy. The redesign lifted our activation rate within weeks.</p>
+            <div class="testi-person"><span class="testi-avatar">SM</span><div><b>Sarah Mitchell</b><span>Product Manager, Nova Digital Studio</span></div></div>
+          </div>
+        </div>
+        <div class="testi-slide">
+          <div class="testi-card">
+            <span class="testi-quote">&rdquo;</span>
+            <div class="testi-stars">★★★★★</div>
+            <p>Working with Mohamed felt like having a co-founder who happened to be a world-class designer. Every decision was backed by research, not opinion.</p>
+            <div class="testi-person"><span class="testi-avatar">AH</span><div><b>Ahmed Hassan</b><span>Founder, Brightline Agency</span></div></div>
+          </div>
+        </div>
+        <div class="testi-slide">
+          <div class="testi-card">
+            <span class="testi-quote">&rdquo;</span>
+            <div class="testi-stars">★★★★★</div>
+            <p>The new storefront is not just beautiful, it converts. Our checkout completion rate improved by double digits in the first month alone.</p>
+            <div class="testi-person"><span class="testi-avatar">LC</span><div><b>Lisa Chen</b><span>CEO, Luxe &amp; Co</span></div></div>
+          </div>
+        </div>
+        <div class="testi-slide">
+          <div class="testi-card">
+            <span class="testi-quote">&rdquo;</span>
+            <div class="testi-stars">★★★★★</div>
+            <p>Mohamed turned a confusing internal tool into something our operations team actually looks forward to using. Thoughtful, fast, and genuinely collaborative.</p>
+            <div class="testi-person"><span class="testi-avatar">JC</span><div><b>James Carter</b><span>CTO, Streamline</span></div></div>
+          </div>
+        </div>
+        <div class="testi-slide">
+          <div class="testi-card">
+            <span class="testi-quote">&rdquo;</span>
+            <div class="testi-stars">★★★★★</div>
+            <p>From the first workshop to the final handoff, the process was clear and the craft was exceptional. Our brand finally looks as good as our product.</p>
+            <div class="testi-person"><span class="testi-avatar">NE</span><div><b>Nour El-Sayed</b><span>Marketing Director, Aurelia</span></div></div>
+          </div>
+        </div>
+      </div>
+      <button class="testi-nav prev" id="testiPrev" aria-label="Previous testimonial"><svg class="icon" aria-hidden="true"><use href="#icon-arrow-left"/></svg></button>
+      <button class="testi-nav next" id="testiNext" aria-label="Next testimonial"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+      <div class="testi-dots" id="testiDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact section" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <p class="eyebrow">Let's Work Together</p>
+      <h2 class="section-title">Have a project in mind?</h2>
+      <p class="contact-text">Whether you have a new product idea, need to improve an existing experience, or simply want to discuss a project, I'd love to hear from you.</p>
+      <ul class="contact-list">
+        <li><span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg></span><div><span>Email</span><a href="mailto:mohamed.ahmed.uiux.designer@gmail.com">mohamed.ahmed.uiux.designer@gmail.com</a></div></li>
+        <li><span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg></span><div><span>Phone</span><a href="https://wa.me/201021424921" target="_blank" rel="noopener noreferrer">01021424921</a></div></li>
+        <li><span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg></span><div><span>Location</span><a>Sharqia, Egypt</a></div></li>
+      </ul>
+      <div class="social-row">
+        <a href="https://www.linkedin.com/in/mohamed--ahmed--" class="social-badge" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
+        <a href="https://www.behance.net/mohamed-ahmed-/projects" class="social-badge" aria-label="Behance" target="_blank" rel="noopener noreferrer">Be</a>
+        <a href="https://www.facebook.com/share/1Brv1i17LH/" class="social-badge" aria-label="Facebook" target="_blank" rel="noopener noreferrer">f</a>
+      </div>
+    </div>
+
+    <div class="contact-panel reveal reveal-2">
+      <span class="contact-panel-title">Let's create something meaningful.</span>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="field"><label for="fName">Name</label><input id="fName" name="name" type="text" required placeholder="Your full name"></div>
+          <div class="field"><label for="fEmail">Email</label><input id="fEmail" name="email" type="email" required placeholder="you@email.com"></div>
+        </div>
+        <div class="field"><label for="fSubject">Subject</label><input id="fSubject" name="subject" type="text" required placeholder="What's this about?"></div>
+        <div class="field"><label for="fMessage">Message</label><textarea id="fMessage" name="message" rows="5" required placeholder="Tell me about your project…"></textarea></div>
+        <button type="submit" class="btn btn-primary btn-block" id="formSubmit"><span>Send Message</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+        <p class="form-success" id="formSuccess" role="status">Thank you — your message has been sent. I'll get back to you soon.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="footer-logo-link" data-scroll aria-label="Go to home section">
+        <img class="footer-logo" src="assetes/my-logo.png" alt="MA logo" />
+      </a>
+      <p class="footer-role">UI / UX DESIGNER</p>
+      <p class="footer-description">Designing meaningful digital experiences that connect people, products, and business goals.</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>EXPLORE</h3>
+      <ul>
+        <li><a href="#home" data-scroll>Home</a></li>
+        <li><a href="#about" data-scroll>About</a></li>
+        <li><a href="#education" data-scroll>Education</a></li>
+        <li><a href="#skills" data-scroll>Skills</a></li>
+        <li><a href="#experience" data-scroll>Experience</a></li>
+        <li><a href="#projects" data-scroll>Projects</a></li>
+        <li><a href="#certificates" data-scroll>Certificates</a></li>
+        <li><a href="#testimonials" data-scroll>Testimonials</a></li>
+        <li><a href="#contact" data-scroll>Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>SERVICES</h3>
+      <ul>
+        <li><a href="#services" data-scroll>UI/UX Design</a></li>
+        <li><a href="#services" data-scroll>Product Design</a></li>
+        <li><a href="#services" data-scroll>User Research</a></li>
+        <li><a href="#services" data-scroll>Wireframing</a></li>
+        <li><a href="#services" data-scroll>Prototyping</a></li>
+        <li><a href="#services" data-scroll>Design Systems</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column footer-connect">
+      <h3>CONNECT</h3>
+      <ul class="footer-contact-list">
+        <li><a href="mailto:mohamed.ahmed.uiux.designer@gmail.com">mohamed.ahmed.uiux.designer@gmail.com</a></li>
+        <li><a href="https://wa.me/201021424921" target="_blank" rel="noopener noreferrer">01021424921</a></li>
+        <li><a href="#contact" data-scroll>Sharqia, Egypt</a></li>
+      </ul>
+      <div class="social-row footer-social-row">
+        <a href="https://www.linkedin.com/in/mohamed--ahmed--" class="social-badge sm" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
+        <a href="https://www.behance.net/mohamed-ahmed-/projects" class="social-badge sm" aria-label="Behance" target="_blank" rel="noopener noreferrer">Be</a>
+        <a href="https://www.facebook.com/share/1Brv1i17LH/" class="social-badge sm" aria-label="Facebook" target="_blank" rel="noopener noreferrer">f</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© <span id="year"></span> Mohamed Ahmed. All rights reserved.</p>
+    <div class="footer-bottom-right">
+      <span>Designed &amp; Built with passion.</span>
+      <a href="#home" data-scroll class="footer-backtop">Back to top <span>↑</span></a>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><svg class="icon" aria-hidden="true"><use href="#icon-chevron-up"/></svg></button>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
