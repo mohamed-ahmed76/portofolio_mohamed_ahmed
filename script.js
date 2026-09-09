@@ -250,11 +250,11 @@ function openModal(key){
   modalDesc.textContent = d.desc;
   modalHighlights.innerHTML = d.highlights.map(h => '<li>' + h + '</li>').join('');
   modalTools.textContent = d.tools;
-  if(d.caseStudyUrl){
-    modalLinks.innerHTML = '<a class="modal-link" href="' + d.caseStudyUrl + '" target="_blank" rel="noopener noreferrer">View Case Study <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>';
-  } else {
-    modalLinks.innerHTML = '';
-  }
+if(d.caseStudyUrl && (key === 'gparts' || key === 'vitalife')){
+  modalLinks.innerHTML = '<a class="modal-link" href="' + d.caseStudyUrl + '" target="_blank" rel="noopener noreferrer">View Case Study <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>';
+} else {
+  modalLinks.innerHTML = '';
+}
   lastFocused = document.activeElement;
   modal.classList.add('open');
   modal.setAttribute('aria-hidden','false');
