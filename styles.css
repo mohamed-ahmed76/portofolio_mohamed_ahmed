@@ -1018,97 +1018,83 @@ section,
 
 /* ============================================================
    DESKTOP HEADER - FINAL FIX
-   Mobile / Tablet Responsive Design remains untouched
+   Mobile / Tablet are NOT affected
 ============================================================ */
 
 @media (min-width: 1101px) {
 
-  /* ----------------------------------------------------------
-     HEADER LAYOUT
-  ---------------------------------------------------------- */
+  /* Main header layout */
   .nav-inner {
-    display: flex;
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr) auto;
     align-items: center;
-    justify-content: space-between;
-    gap: 24px;
+    column-gap: 18px;
   }
 
-
-  /* ----------------------------------------------------------
-     LOGO
-     Same original size, larger visual area, no clipping
-  ---------------------------------------------------------- */
+  /* Logo area */
   .brand {
+    width: 190px;
+    height: auto;
+    min-height: 70px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 170px;
-    height: 70px;
     flex-shrink: 0;
     overflow: visible;
-    transform: translateY(5px);
+    transform: translateY(3px);
   }
 
+  /* Logo itself */
   .brand-mark {
-    width: 170px;
-    height: 70px;
-    max-width: 100%;
+    display: block;
+    width: 190px;
+    height: auto;
+    max-width: none;
     flex-shrink: 0;
-    display: block;
     object-fit: contain;
-    transform: none;
+
+    /* Removes the visual empty space inside the PNG */
+    transform: translateX(-30px);
+
+    filter: drop-shadow(0 0 18px rgba(198,161,91,.18));
   }
 
-   /* ===== DESKTOP HEADER FIX - FINAL ===== */
-@media (min-width: 1101px) {
-
-  /* Keep the header elements vertically centered */
-  .nav-inner {
-    align-items: center;
-  }
-
-  /* Move the visible logo slightly down */
-  .brand-mark {
-    display: block;
-    transform: translateY(6px);
-  }
-
-  /* Create real space between Contact and Dark Mode */
-  .nav-actions {
-    margin-left: 28px !important;
-  }
-
-  /* Keep the dark mode button centered */
-  .theme-toggle {
-    margin: 0;
-  }
-}
-
-
-  /* ----------------------------------------------------------
-     NAVIGATION
-  ---------------------------------------------------------- */
+  /* Navigation */
   .nav-links {
     display: flex;
     align-items: center;
-    gap: 2px;
-    margin-left: auto;
+    justify-content: center;
+    gap: 0;
+    min-width: 0;
+    white-space: nowrap;
   }
 
+  .nav-links a {
+    padding: 9px 11px;
+    font-size: .9rem;
+  }
 
-  /* ----------------------------------------------------------
-     CONTACT → DARK MODE SPACE
-  ---------------------------------------------------------- */
+  .nav-links a::after {
+    left: 11px;
+    right: 11px;
+  }
+
+  /* Dark mode area */
   .nav-actions {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 10px;
-    margin-left: 25px !important;
+    margin-left: 0;
     flex-shrink: 0;
   }
 
   .theme-toggle {
+    width: 42px;
+    height: 42px;
     margin: 0;
     flex-shrink: 0;
   }
+
 }
+
