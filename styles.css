@@ -1015,3 +1015,18 @@ section,
   }
 
 }
+
+/* Desktop Header Fix */
+@media (min-width: 1101px) {
+  .nav-inner {
+    align-items: center;
+  }
+
+  .brand {
+    transform: translateY(4px);
+  }
+
+  .nav-actions {
+    gap: 20px;
+  }
+}
