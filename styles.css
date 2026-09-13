@@ -1016,3 +1016,74 @@ section,
 
 }
 
+/* ============================================================
+   DESKTOP HEADER - FINAL FIX
+   Mobile / Tablet Responsive Design remains untouched
+============================================================ */
+
+@media (min-width: 1101px) {
+
+  /* ----------------------------------------------------------
+     HEADER LAYOUT
+  ---------------------------------------------------------- */
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+
+  /* ----------------------------------------------------------
+     LOGO
+     Same original size, larger visual area, no clipping
+  ---------------------------------------------------------- */
+  .brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 170px;
+    height: 70px;
+    flex-shrink: 0;
+    overflow: visible;
+    transform: translateY(5px);
+  }
+
+  .brand-mark {
+    width: 170px;
+    height: 70px;
+    max-width: 100%;
+    flex-shrink: 0;
+    display: block;
+    object-fit: contain;
+    transform: none;
+  }
+
+
+  /* ----------------------------------------------------------
+     NAVIGATION
+  ---------------------------------------------------------- */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-left: auto;
+  }
+
+
+  /* ----------------------------------------------------------
+     CONTACT → DARK MODE SPACE
+  ---------------------------------------------------------- */
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 25px !important;
+    flex-shrink: 0;
+  }
+
+  .theme-toggle {
+    margin: 0;
+    flex-shrink: 0;
+  }
+}
