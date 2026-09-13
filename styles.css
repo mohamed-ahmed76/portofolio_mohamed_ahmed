@@ -1016,74 +1016,74 @@ section,
 
 }
 
-/* ===== DESKTOP HEADER FINAL FIX ===== */
+/* ============================================================
+   DESKTOP HEADER - FINAL FIX
+   Mobile / Tablet Responsive Design remains untouched
+============================================================ */
+
 @media (min-width: 1101px) {
 
-  /* Keep logo, navigation and actions aligned */
+  /* ----------------------------------------------------------
+     HEADER LAYOUT
+  ---------------------------------------------------------- */
   .nav-inner {
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr) auto;
+    display: flex;
     align-items: center;
-    column-gap: 20px;
+    justify-content: space-between;
+    gap: 24px;
   }
 
-  /* Logo alignment */
+
+  /* ----------------------------------------------------------
+     LOGO
+     Same original size, larger visual area, no clipping
+  ---------------------------------------------------------- */
   .brand {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 42px;
+    width: 170px;
+    height: 70px;
+    flex-shrink: 0;
+    overflow: visible;
     transform: translateY(5px);
   }
 
   .brand-mark {
+    width: 170px;
+    height: 70px;
+    max-width: 100%;
+    flex-shrink: 0;
     display: block;
-    width: clamp(110px, 12vw, 170px);
-    height: auto;
+    object-fit: contain;
+    transform: none;
   }
 
-  /* Navigation */
+
+  /* ----------------------------------------------------------
+     NAVIGATION
+  ---------------------------------------------------------- */
   .nav-links {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 2px;
+    margin-left: auto;
   }
 
-  /* Space between Contact and Dark Mode */
+
+  /* ----------------------------------------------------------
+     CONTACT → DARK MODE SPACE
+  ---------------------------------------------------------- */
   .nav-actions {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-left: 18px;
+    margin-left: 25px !important;
+    flex-shrink: 0;
   }
 
   .theme-toggle {
     margin: 0;
-  }
-}
-
-/* ===== DESKTOP HEADER FIX - FINAL ===== */
-@media (min-width: 1101px) {
-
-  /* Keep the header elements vertically centered */
-  .nav-inner {
-    align-items: center;
-  }
-
-  /* Move the visible logo slightly down */
-  .brand-mark {
-    display: block;
-    transform: translateY(6px);
-  }
-
-  /* Create real space between Contact and Dark Mode */
-  .nav-actions {
-    margin-left: 28px !important;
-  }
-
-  /* Keep the dark mode button centered */
-  .theme-toggle {
-    margin: 0;
+    flex-shrink: 0;
   }
 }
