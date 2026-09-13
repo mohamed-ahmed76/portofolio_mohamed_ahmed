@@ -1062,3 +1062,28 @@ section,
     margin: 0;
   }
 }
+
+/* ===== DESKTOP HEADER FIX - FINAL ===== */
+@media (min-width: 1101px) {
+
+  /* Keep the header elements vertically centered */
+  .nav-inner {
+    align-items: center;
+  }
+
+  /* Move the visible logo slightly down */
+  .brand-mark {
+    display: block;
+    transform: translateY(6px);
+  }
+
+  /* Create real space between Contact and Dark Mode */
+  .nav-actions {
+    margin-left: 28px !important;
+  }
+
+  /* Keep the dark mode button centered */
+  .theme-toggle {
+    margin: 0;
+  }
+}
