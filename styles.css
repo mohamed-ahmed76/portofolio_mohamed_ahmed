@@ -1016,17 +1016,49 @@ section,
 
 }
 
-/* Desktop Header Fix */
+/* ===== DESKTOP HEADER FINAL FIX ===== */
 @media (min-width: 1101px) {
+
+  /* Keep logo, navigation and actions aligned */
   .nav-inner {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
     align-items: center;
+    column-gap: 20px;
   }
 
+  /* Logo alignment */
   .brand {
-    transform: translateY(4px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 42px;
+    transform: translateY(5px);
   }
 
+  .brand-mark {
+    display: block;
+    width: clamp(110px, 12vw, 170px);
+    height: auto;
+  }
+
+  /* Navigation */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+  }
+
+  /* Space between Contact and Dark Mode */
   .nav-actions {
-    gap: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 18px;
+  }
+
+  .theme-toggle {
+    margin: 0;
   }
 }
